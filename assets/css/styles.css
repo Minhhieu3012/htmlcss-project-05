@@ -68,7 +68,7 @@ a {
 
 /* =================================================== Header ====================================================== */
 .header {
-  padding: 42px 0;
+  padding-top: 42px;
 }
 
 .header__inner {
@@ -127,4 +127,103 @@ a {
   line-height: 1.75;
   color: #212832;
   cursor: pointer;
+}
+
+/* =================================================== Hero ====================================================== */
+.hero {
+  margin-top: 76px;
+}
+
+.hero__inner {
+  display: flex;
+}
+
+.hero__left {
+  margin-top: 57px;
+  width: 46%;
+}
+
+.hero__text {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d77;
+}
+
+.hero__text::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  margin-right: 12px;
+  background: #696d77;
+}
+
+.hero__heading {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.17;
+  color: #212832;
+}
+
+.hero__heading span {
+  color: var(--primary-color);
+}
+
+.hero__desc {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #696d76;
+}
+
+.hero-form {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  height: 74px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 16px 42px 0px #00000012;
+}
+
+.hero-form__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 1.6rem;
+  line-height: 1.75;
+  padding: 23px 16px 23px 23px;
+}
+
+.hero-form__input::placeholder {
+  color: #696d76;
+}
+
+.hero-form__btn {
+  background: var(--primary-color);
+  border-radius: 8px;
+  width: 149px;
+  height: 58px;
+  border: none;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.hero__textnote {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #696d76;
+}
+
+.hero__right {
+  flex-grow: 1;
+  margin-left: 160px;
 }
