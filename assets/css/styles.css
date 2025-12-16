@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --primary-color: ;
+  --primary-color: #7264d6;
 }
 
 /* =================================================== Common ====================================================== */
@@ -31,4 +31,100 @@ select,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  --height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 113px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 6px;
+  background: #212832;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* =================================================== Header ====================================================== */
+.header {
+  padding: 42px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  margin-left: 70px;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__link {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d76;
+  padding: 8px 24px;
+}
+
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  background: var(--primary-color);
+  bottom: 0;
+  left: 24px;
+  right: 24px;
+  border-radius: 1px;
+  height: 2px;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.navbar__link:hover::after {
+  opacity: 1;
+}
+
+.navbar__link:hover {
+  color: #212832;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-action__link {
+  padding: 8px 28px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #212832;
+  cursor: pointer;
 }
