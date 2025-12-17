@@ -66,6 +66,38 @@ a {
   cursor: pointer;
 }
 
+.section-text {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d77;
+}
+
+.section-text::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  margin-right: 12px;
+  background: #696d77;
+}
+
+.section-heading {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.25;
+  color: #212832;
+}
+
+.section-desc {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #696d76;
+}
+
 /* =================================================== Header ====================================================== */
 .header {
   padding-top: 42px;
@@ -170,14 +202,6 @@ a {
 
 .hero__heading span {
   color: var(--primary-color);
-}
-
-.hero__desc {
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.7;
-  color: #696d76;
 }
 
 .hero-form {
@@ -444,7 +468,7 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-  margin-left: 44px;
+  margin-left: 48px;
 }
 
 .work__card-text {
@@ -454,7 +478,7 @@ a {
   color: #212832;
 }
 
-.work__card-la`bel {
+.work__card-label {
   /* font-family: Inter; */
   font-weight: 400;
   font-size: 1.2rem;
@@ -511,6 +535,7 @@ a {
 }
 
 .work-item__desc {
+  margin-top: 16px;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.75;
