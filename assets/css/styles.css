@@ -227,3 +227,119 @@ a {
   flex-grow: 1;
   margin-left: 160px;
 }
+
+.hero__media {
+  position: relative;
+}
+
+.hero__img {
+  width: 296px;
+  height: 562px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.hero-deposite {
+  position: absolute;
+  top: 113px;
+  left: -100px;
+  display: flex;
+  width: 174px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px #00000012;
+  border-radius: 6px;
+}
+
+.hero-deposite__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.hero-deposite__text {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #31456a;
+}
+
+.hero-deposite__price {
+  margin-left: 19px;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #4ab5e3;
+}
+
+.hero-badge {
+  position: absolute;
+  top: 127px;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #da6464;
+}
+
+.hero-badge__text {
+  font-weight: 600;
+  font-size: 4.4rem;
+  color: #fff;
+}
+
+.hero-badge__label {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.hero-card {
+  position: absolute;
+  bottom: 61px;
+  right: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 11px;
+  padding: 20px 0 22px 14px;
+  width: 124px;
+  height: 68px;
+  border-radius: 10px;
+  background: #439f90;
+}
+
+.hero-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-card__icon {
+  width: 20px;
+  height: 26px;
+}
+
+.hero-card__price {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.hero-card__label {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.hero-deposite__icon,
+.hero-card__icon {
+  max-width: 100%;
+}
+
+/* =================================================== Works ====================================================== */
