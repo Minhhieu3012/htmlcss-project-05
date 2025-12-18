@@ -541,3 +541,170 @@ a {
   line-height: 1.75;
   color: #696d76;
 }
+
+/* =================================================== About ====================================================== */
+.about {
+  margin-top: 160px;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  row-gap: 160px;
+  column-gap: 130px;
+}
+
+.about__content {
+  width: 470px;
+}
+
+.about__list {
+  margin: 28px 0 38px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.about__item {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #212832;
+}
+
+.about__item::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  margin-right: 12px;
+}
+
+.about__action-btn {
+  width: 149px;
+  height: 58px;
+}
+
+.about__media {
+  position: relative;
+  margin-top: 86px;
+  width: 100%;
+}
+
+.about__img-top {
+  width: 482px;
+  height: 322px;
+}
+
+.about__badge {
+  position: absolute;
+  top: -48px;
+  right: -88px;
+
+  width: 276px;
+  height: 86px;
+  background: #fff;
+  box-shadow: 0px 14px 38px 0px #00000012;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 23px 13px;
+}
+
+.about__badge-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #f7ebeb;
+  padding: 10px;
+  margin-right: 14px;
+}
+
+.about__badge-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.about__info-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__info-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin-right: 67px;
+}
+
+.about__info-text {
+  /* font-family: Inter; */
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #212832;
+}
+
+.about__info-label {
+  /* font-family: Inter; */
+  font-size: 1rem;
+  color: #696d76;
+}
+
+.about__info-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.about__info-price {
+  /* font-family: Inter; */
+  font-size: 1.6rem;
+  color: #212832;
+}
+
+.about__income {
+  position: absolute;
+  right: -52px;
+  bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 120px;
+  height: 120px;
+  padding: 14px 0 15px 15px;
+  border-radius: 16px;
+  background: #439f90;
+}
+
+.about__income-icon-wrap {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.about__income-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.about__income-text {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.about__income-price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #fff;
+}
