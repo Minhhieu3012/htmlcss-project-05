@@ -146,13 +146,13 @@ a {
   text-shadow: 1px 0 0 currentColor;
 }
 
-.header-action {
+.header__action {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
 
-.header-action__link {
+.header__action-link {
   padding: 8px 28px;
   font-weight: 600;
   font-size: 1.6rem;
@@ -204,7 +204,7 @@ a {
   color: var(--primary-color);
 }
 
-.hero-form {
+.hero__form {
   margin-top: 40px;
   display: flex;
   align-items: center;
@@ -214,7 +214,7 @@ a {
   box-shadow: 0px 16px 42px 0px #00000012;
 }
 
-.hero-form__input {
+.hero__form-input {
   flex: 1;
   border: none;
   outline: none;
@@ -225,11 +225,11 @@ a {
   padding: 23px 16px 23px 23px;
 }
 
-.hero-form__input::placeholder {
+.hero__form-input::placeholder {
   color: #696d76;
 }
 
-.hero-form__btn {
+.hero__form-btn {
   background: var(--primary-color);
   border-radius: 8px;
   width: 149px;
@@ -263,7 +263,7 @@ a {
   object-fit: cover;
 }
 
-.hero-deposite {
+.hero__deposite {
   position: absolute;
   top: 113px;
   left: -100px;
@@ -277,12 +277,12 @@ a {
   border-radius: 6px;
 }
 
-.hero-deposite__icon {
+.hero__deposite-icon {
   width: 18px;
   height: 18px;
 }
 
-.hero-deposite__text {
+.hero__deposite-text {
   margin-left: 8px;
   font-weight: 600;
   font-size: 1.4rem;
@@ -290,14 +290,14 @@ a {
   color: #31456a;
 }
 
-.hero-deposite__price {
+.hero__deposite-price {
   margin-left: 19px;
   font-size: 1.4rem;
   line-height: 1;
   color: #4ab5e3;
 }
 
-.hero-badge {
+.hero__badge {
   position: absolute;
   top: 127px;
   right: 0;
@@ -311,24 +311,24 @@ a {
   background: #da6464;
 }
 
-.hero-badge__text {
+.hero__badge-text {
   font-weight: 600;
   font-size: 4.4rem;
   color: #fff;
 }
 
-.hero-badge__label {
+.hero__badge-label {
   font-size: 1.6rem;
   color: #fff;
 }
 
-.hero-card {
+.hero__card {
   position: absolute;
   bottom: 61px;
   right: 104px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify__content: center;
   column-gap: 11px;
   padding: 20px 0 22px 14px;
   width: 124px;
@@ -337,32 +337,32 @@ a {
   background: #439f90;
 }
 
-.hero-card__info {
+.hero__card-info {
   display: flex;
   flex-direction: column;
 }
 
-.hero-card__icon {
+.hero__card-icon {
   width: 20px;
   height: 26px;
 }
 
-.hero-card__price {
+.hero__card-price {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   color: #fff;
 }
 
-.hero-card__label {
+.hero__card-label {
   margin-top: 5px;
   font-size: 0.8rem;
   line-height: 1;
   color: #fff;
 }
 
-.hero-deposite__icon,
-.hero-card__icon {
+.hero__deposite-icon,
+.hero__card-icon {
   max-width: 100%;
 }
 
@@ -971,4 +971,95 @@ a {
 
 .client__dot--active {
   background: #7264d6;
+  cursor: default;
+}
+
+/* =================================================== Blog ====================================================== */
+.blog {
+  margin-top: 160px;
+}
+
+.blog__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__left {
+  width: 435px;
+}
+
+.blog__desc {
+  margin-top: 18px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d76;
+}
+
+.blog__btn {
+  width: 123px;
+  height: 58px;
+  border-radius: 8px;
+}
+
+.blog__body {
+  margin-top: 70px;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.blog__item {
+  display: flex;
+  column-gap: 22px;
+  width: 570px;
+  height: 216px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #dfe2e8;
+  padding: 28px;
+}
+
+.blog__item-active {
+  border: none;
+  box-shadow: 0px 20px 50px 0px #00000012;
+}
+
+.blog__item-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.blog__item-info {
+  margin-top: 10px;
+}
+
+.blog__item-date {
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #696d76;
+}
+
+.blog__item-desc {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #212832;
+}
+
+.blog__item-cta {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #696d76;
+  cursor: pointer;
+}
+
+.blog__item-cta--active {
+  color: var(--primary-color);
 }
