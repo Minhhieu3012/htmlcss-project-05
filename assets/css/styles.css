@@ -1063,3 +1063,115 @@ a {
 .blog__item-cta--active {
   color: var(--primary-color);
 }
+
+/* =================================================== Download ====================================================== */
+.download {
+  margin-top: 160px;
+}
+
+.download__inner {
+  position: relative;
+  height: 466px;
+  background: var(--primary-color);
+  border-radius: 24px;
+  padding: 49px 112px;
+}
+
+.download__content {
+  margin-top: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 435px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download__text,
+.download__heading,
+.download__desc {
+  color: #fff;
+}
+
+.download__text::before {
+  content: "";
+  background: #fff;
+}
+
+.download__desc {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.download__app {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+.download__item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 182px;
+  height: 64px;
+  padding: 18px 32px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.download__icon-googleplay {
+  width: 24px;
+  height: 26px;
+}
+
+.download__icon-appstore {
+  width: 20px;
+  height: 24px;
+}
+
+.download__item-text {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.download__item-name {
+  margin-top: 3px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.download__star-decor {
+  width: 154px;
+  height: 154px;
+}
+
+.download__star-decor:nth-child(1) {
+  position: absolute;
+  top: 49px;
+  left: 112px;
+}
+
+.download__star-decor:nth-child(2) {
+  position: absolute;
+  top: 49px;
+  right: 112px;
+}
+
+.download__star-decor:nth-child(3) {
+  position: absolute;
+  bottom: 49px;
+  left: 166px;
+}
+
+.download__star-decor:nth-child(4) {
+  position: absolute;
+  bottom: 49px;
+  right: 166px;
+}
